@@ -1,0 +1,27 @@
+{
+  "name": "sample-notification-service",
+  "version": "1.0.0",
+  "description": "Notification dispatcher — emails, SMS, push, websockets",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "worker": "node worker/dispatcher.js"
+  },
+  "dependencies": {
+    "axios": "0.21.1",
+    "lodash": "4.17.20",
+    "express": "4.16.0",
+    "nodemailer": "6.6.0",
+    "ws": "7.4.0",
+    "ioredis": "4.27.0",
+    "bull": "3.22.0",
+    "twilio": "3.60.0",
+    "handlebars": "4.7.6",
+    "winston": "3.3.3",
+    "sample-legacy-app": "1.0.0"
+  },
+  "devDependencies": {
+    "jest": "27.0.0",
+    "nodemon": "2.0.7"
+  }
+}
